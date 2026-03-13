@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Birthday Surprise</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="star-container"></div>
+
+<!-- PAGE 1 -->
+
+<div id="page1" class="page active">
+
+<h1>Can I give you a small birthday gift? 🎁</h1>
+
+<h2>Dry Fruit Mix 🌰</h2>
+
+<div class="buttons">
+
+<button class="yes" onclick="yesFlow(2)">Yes</button>
+
+<button class="no" onclick="nextPage(2,'Okay… lets try something else 😊')">No</button>
+
+</div>
+
+</div>
+
+
+<!-- PAGE 2 -->
+
+<div id="page2" class="page">
+
+<h2>Maybe this one? 🍫</h2>
+
+<h1>Big Cadbury Chocolate</h1>
+
+<div class="buttons">
+
+<button class="yes" onclick="yesFlow(3)">Yes</button>
+
+<button class="no" onclick="nextPage(3,'Uff okay… lets see another one 😅')">No</button>
+
+</div>
+
+</div>
+
+
+<!-- PAGE 3 -->
+
+<div id="page3" class="page">
+
+<h2>Last option 😌</h2>
+
+<h1>Teddy Bear 🧸</h1>
+
+<div class="buttons">
+
+<button id="yesBtn" class="yes" onclick="yesFinal()">Yes</button>
+
+<button id="noBtn" class="no" onclick="resizeButtons()">No</button>
+
+</div>
+
+</div>
+
+
+<!-- FINAL PAGE -->
+
+<div id="finalPage" class="page">
+
+<h1>🧸 Okay… I'll confirm the teddy bear. Is that okay?</h1>
+
+<p class="finalText">
+
+Your birthday is coming soon baabes💖💖💖💖💖🎂  
+Even though you always say I shouldn't spend money on gifts,
+I still wanted to do something small to make you smile.
+
+So until your birthday arrives…
+this teddy bear is my little advance surprise for my best friend 💖
+
+</p>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
